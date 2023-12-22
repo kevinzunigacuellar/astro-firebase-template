@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 
-export const get: APIRoute = ({ redirect, cookies }) => {
+export const GET: APIRoute = ({ redirect, cookies }) => {
   cookies.delete("session", {
     path: "/",
   });
